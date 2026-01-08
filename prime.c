@@ -1,4 +1,4 @@
-// Question 1: The Mathematician’s Number Challenge
+// Question : The Mathematician’s Number Challenge
 
 Problem Story:
 Riya, a young mathematician, loves playing with numbers. One day, she picks a number and wants to check two things:
@@ -71,3 +71,4 @@ int main() {
     return 0;
 
 }
+
