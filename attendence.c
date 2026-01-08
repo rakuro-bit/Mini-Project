@@ -1,64 +1,36 @@
-// HOSTEL ATTENDANCE TRACKER 
-Assam Down Town University maintains a strict hostel monitoring system to ensure student safety.
-Every hostel student must mark attendance daily.
-The warden keeps attendance for 7 days (Monday to Sunday) for 10 students.
+// Problem Title: Professor Neo’s Attendance Analyzer 🎓
+🧩 Story:
 
-The attendance is stored in a 2D array A[10][7], where:
-A[i][j] = 1 → Student i was Present on Day j
+Professor Neo teaches Introduction to Programming to first-year students.
+Every day, he records attendance in a digital register using binary codes:
 
-A[i][j] = 0 → Student i was Absent on Day j
+1 means the student was present
 
-Here:
+0 means the student was absent
 
-i = Student number (1 to 10)
+At the end of the week, Neo wants to analyze how his class performed in terms of attendance.
+He wants your help to count how many students were present and how many were absent on that particular day.
 
-j = Day number (1 to 7)
+Problem Statement:
 
-The warden wants a weekly summary of attendance.
+You are given an array attendance[] of size n, where each element is either 1 or 0.
+Write a program to count and print the total number of present and absent students.
 
-Your Task: Write the algorithm or C program to do the following:
-(a) Calculate and print the total number of days each student was present.
+📥 Input Format:
 
-Total present days = sum of each row.
+The first line contains an integer n — total number of students in the class.
 
-(b) Identify the student who has the highest attendance in the week.
+The second line contains n space-separated integers (each either 0 or 1)
 
-If two students have the same highest attendance, print the one with the lower student number.
+Output Format:
 
-Find the day (1–7) on which overall hostel attendance was the lowest.
+Print the following two lines:
 
-Total attendance on a day = sum of each column.
-Input :
-1 1 0 1 1 0 1
-1 0 1 1 1 1 1
-0 1 1 0 1 1 0
-1 1 1 1 0 1 1
-1 0 1 0 1 0 1
-0 0 1 1 1 1 1
-1 1 0 0 0 1 1
-1 1 1 1 1 0 0
-0 1 1 1 1 1 1
-1 0 0 1 1 1 1
+Present: X
+Absent: Y
 
-Output:
-Weekly Attendance Summary
--------------------------
 
-Total Present Days:
-Student 1: 5
-Student 2: 6
-Student 3: 4
-Student 4: 6
-Student 5: 4
-Student 6: 5
-Student 7: 5
-Student 8: 5
-Student 9: 6
-Student 10: 5
-
-Student with Highest Attendance: Student 2 (6 Days)
-
-Day with Lowest Overall Attendance: Day 2
+Where X is the number of students present and Y is the number of students absent.
     //
 #include <stdio.h>
 
@@ -87,3 +59,4 @@ int main() {
     return 0;
 
 }
+
